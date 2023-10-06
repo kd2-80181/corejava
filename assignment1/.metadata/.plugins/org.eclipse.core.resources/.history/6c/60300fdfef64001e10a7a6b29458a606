@@ -1,0 +1,29 @@
+package question1;	
+import java.util.Scanner;
+
+	public class Conversion {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        // Accept an integer input from the user
+	        System.out.print("Enter Number: ");
+	        int number = scanner.nextInt();
+
+	        // Print the given number
+	        System.out.println("Given Number: " + number);
+
+	        // Convert and print the binary equivalent
+	        String binary = Integer.toBinaryString(number);
+	        System.out.println("Binary equivalent: " + binary);
+
+	        // Convert and print the octal equivalent
+	        String octal = Integer.toOctalString(number);
+	        System.out.println("Octal equivalent: " + octal);
+
+	        // Convert and print the hexadecimal equivalent
+	        String hex = Integer.toHexString(number);
+	        System.out.println("Hexadecimal equivalent: " + hex);
+	    }
+	}
+
+}
